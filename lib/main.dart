@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
         PhrasesScreen.routeName: (_) => const PhrasesScreen(),
       },
       initialRoute: HomeScreen.routeName,
-      debugShowCheckedModeBanner: true,
+      debugShowCheckedModeBanner: false,
     );
   }
 }
