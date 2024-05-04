@@ -27,29 +27,34 @@ class HomeScreen extends StatelessWidget {
           ),
         ),
       ),
-      body: Column(
-        children: [
-          DefaultTextButton(
-            onTap: () => Navigator.pushNamed(context, NumbersScreen.routeName),
-            text: 'Numbers',
-            backgroundColor: Colors.orangeAccent,
-          ),
-          DefaultTextButton(
-            onTap: () =>Navigator.pushNamed(context, FamilyMemberScreen.routeName),
-            text: 'Family Members',
-            backgroundColor: const Color(0xff5D8B38),
-          ),
-          DefaultTextButton(
-            onTap: ()=>Navigator.pushNamed(context, ColorsScreen.routeName),
-            text: 'Colors',
-            backgroundColor: const Color(0xff8849AB),
-          ),
-          DefaultTextButton(
-            onTap: () =>Navigator.pushNamed(context, PhrasesScreen.routeName),
-            text: 'Phrases',
-            backgroundColor: const Color(0xff52AED1),
-          ),
-        ],
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            DefaultTextButton(
+              onTap: () =>
+                  Navigator.pushNamed(context, NumbersScreen.routeName),
+              text: 'Numbers',
+              backgroundColor: Colors.orangeAccent,
+            ),
+            DefaultTextButton(
+              onTap: () =>
+                  Navigator.pushNamed(context, FamilyMemberScreen.routeName),
+              text: 'Family Members',
+              backgroundColor: const Color(0xff5D8B38),
+            ),
+            DefaultTextButton(
+              onTap: () => Navigator.pushNamed(context, ColorsScreen.routeName),
+              text: 'Colors',
+              backgroundColor: const Color(0xff8849AB),
+            ),
+            DefaultTextButton(
+              onTap: () =>
+                  Navigator.pushNamed(context, PhrasesScreen.routeName),
+              text: 'Phrases',
+              backgroundColor: const Color(0xff52AED1),
+            ),
+          ],
+        ),
       ),
     );
   }
